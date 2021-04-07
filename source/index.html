@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
@@ -42,25 +42,27 @@
         <div class="container">
           <h2 class="visually-hidden">Знакомство с приложением</h2>
           <p class="promo__slogan">Взгляни на жизнь иначе</p>
-          <button class="promo__button" type="button">Скачать приложение</button>
-          <ul class="promo-icon__list">
-            <li class="promo-icon__item">
-              <a href="#">
-                <img src="img/svg/apple-logo.svg" width="47" height="56" alt="Apple">
-              </a>
-            </li>
-            <li class="promo-icon__item">
-              <a href="#">
-                <img src="img/svg/android-logo.svg" width="43" height="47" alt="Android">
-              </a>
-            </li>
-            <li class="promo-icon__item">
-              <a href="#">
-                <img src="img/svg/microsoft-logo.svg" width="44" height="41" alt="Microsoft">
-              </a>
-            </li>
-          </ul>
-          <p class="promo_text">Доступно для iPhone, iPad, Android, Windows, Phone, OS X, Windows 8</p>
+          <a class="promo__button" href="#">Скачать приложение</a>
+          <div class="promo-icon">
+            <ul class="promo-icon__list">
+              <li class="promo-icon__item">
+                <a href="#">
+                  <img src="img/svg/apple-logo.svg" width="47" height="56" alt="Apple">
+                </a>
+              </li>
+              <li class="promo-icon__item">
+                <a href="#">
+                  <img src="img/svg/android-logo.svg" width="43" height="47" alt="Android">
+                </a>
+              </li>
+              <li class="promo-icon__item">
+                <a href="#">
+                  <img src="img/svg/microsoft-logo.svg" width="44" height="41" alt="Microsoft">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows, Phone, OS X, Windows 8</p>
         </div>
       </section>
       <section class="advantages">
@@ -68,14 +70,6 @@
         <div class="container">
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
           <p class="advantages__slogan">Нам есть, что вам предложить!</p>
-          <ul class="advantages-gallery__list">
-            <li class="advantages-gallery__item background-gray">
-            </li>
-            <li class="advantages-gallery__item background-pink visually-hidden">
-            </li>
-            <li class="advantages-gallery__item background-smile visually-hidden">
-            </li>
-          </ul>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__lead">Поднимает настроение</h3>
@@ -142,41 +136,47 @@
             </tr>
             <tr>
               <td class="tariff__options">Разовый фильтр</td>
-              <td>
-                <img src="img/svg/yes.svg" width="31" height="21" alt="Да">
+              <td class="tariff__yes">
+                <p class="visually-hidden">Да</p>
+                <!-- <img src="img/svg/yes.svg" width="31" height="21" alt="Да"> -->
               </td>
-              <td>
-                <img src="img/svg/yes.svg" width="31" height="21" alt="Да">
+              <td class="tariff__yes">
+                <!-- <img src="img/svg/yes.svg" width="31" height="21" alt="Да"> -->
               </td>
-              <td>
-                <img src="img/svg/yes.svg" width="31" height="21" alt="Да">
+              <td class="tariff__yes">
+               <!--  <img src="img/svg/yes.svg" width="31" height="21" alt="Да"> -->
               </td>
             </tr>
             <tr>
               <td class="tariff__options">Смайлики</td>
-              <td>
-                <img src="img/svg/no.svg" width="27" height="27" alt="Нет">
+              <td class="tariff__no">
+              <!--   <img src="img/svg/no.svg" width="27" height="27" alt="Нет"> -->
               </td>
-              <td>
-                <img src="img/svg/yes.svg" width="31" height="21" alt="Да">
+              <td class="tariff__yes">
+                <!-- <img src="img/svg/yes.svg" width="31" height="21" alt="Да"> -->
               </td>
-              <td>
-                <img src="img/svg/yes.svg" width="31" height="21" alt="Да">
+              <td class="tariff__yes">
+               <!--  <img src="img/svg/yes.svg" width="31" height="21" alt="Да"> -->
               </td>
             </tr>
             <tr>
               <td class="tariff__options">Комментарии</td>
-              <td>
-                <img src="img/svg/no.svg" width="27" height="27" alt="Нет">
+              <td class="tariff__no">
+                <!-- <img src="img/svg/no.svg" width="27" height="27" alt="Нет"> -->
               </td>
-              <td>
-                <img src="img/svg/no.svg" width="27" height="27" alt="Нет">
+              <td class="tariff__no">
+                <!-- <img src="img/svg/no.svg" width="27" height="27" alt="Нет"> -->
               </td>
-              <td>
-                <img src="img/svg/yes.svg" width="31" height="21" alt="Да">
+              <td class="tariff__yes">
+              <!--   <img src="img/svg/yes.svg" width="31" height="21" alt="Да"> -->
               </td>
             </tr>
           </table>
+          <div class="tariff__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--active" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
         </div>
       </section>
       <section class="contacts">
@@ -203,7 +203,7 @@
           </iframe>
         </div>
       </section>
-      <footer>
+      <footer class="footer">
         <div class="container">
           <a class="footer__logo">
             <svg width="153" height="48" viewBox="0 0 153 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,23 +232,26 @@
               </defs>
             </svg>
           </a>
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="">
-                <img src="img/svg/twitter.svg" width="18" height="14" alt="Twitter">
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="">
-                <img src="img/svg/facebook.svg" width="9" height="18" alt="Facebook">
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="">
-                <img src="img/svg/youtube.svg" width="15" height="13" alt="Youtube">
-              </a>
-            </li>
-          </ul>
+          <div class="footer-social">
+            <ul class="footer-social__list">
+              <li class="footer-social__item">
+                <a class="footer-social__link footer-social__link--twitter" href="">
+                  <p class="visually-hidden">Да</p>
+                  <!-- <img src="img/svg/twitter.svg" width="18" height="14" alt="Twitter"> -->
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a class="footer-social__link footer-social__link--facebook" href="">
+                  <!-- <img src="img/svg/facebook.svg" width="9" height="18" alt="Facebook"> -->
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a class="footer-social__link  footer-social__link--youtube" href="">
+                  <!-- <img src="img/svg/youtube.svg" width="15" height="13" alt="Youtube"> -->
+                </a>
+              </li>
+            </ul>
+          </div>
           <p class="footer__creator">
             Разработано
             <a href="#">
