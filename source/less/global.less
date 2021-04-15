@@ -1,0 +1,59 @@
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip-path: inset(100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+//Colors
+
+@white:#FFFFFF;
+@dark_blue:#283645;
+@light_brown:#F2F2F2;
+@red:#D22856;
+@black:#000000;
+
+// Fonts
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('/fonts/opensanslight.woff2') format('woff2'), url('/fonts/opensanslight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('/fonts/opensans.woff2') format('woff2'), url('/fonts/opensans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('/fonts/opensansbold.woff2') format('woff2'), url('/fonts/opensansbold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
