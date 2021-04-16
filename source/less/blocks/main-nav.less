@@ -1,0 +1,36 @@
+.main-nav {
+  background-color: @dark_blue;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  padding:22px 0;
+  border-top: 2px solid rgba(80, 80, 81, 0.3);
+  border-bottom:2px solid rgba(32, 44, 56, 1);;
+
+}
+
+.main-nav__item-link {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @white;
+}
+
+.main-nav__item-link:hover {
+  color: @red;
+}
+
+.main-nav__item-link:active {
+  color: @black;
+  opacity: 0.3;
+}
+
+.main-nav__item--active {
+  border-bottom: 2px solid @white;
+}
