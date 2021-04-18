@@ -8,7 +8,7 @@
   <body class="page__body">
     <header class="page-header">
       <div class="container">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <svg width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z" />
             <path d="M21.5935 1.38904C21.5779 1.21262 21.5991 1.03487 21.6556 0.867114C21.7122 0.699353 21.803 0.545245 21.9221 0.414596C22.0412 0.283947 22.1862 0.179616 22.3477 0.108238C22.5092 0.0368607 22.6837 0 22.8602 0C23.0366 0 23.2112 0.0368607 23.3727 0.108238C23.5342 0.179616 23.6791 0.283947 23.7982 0.414596C23.9174 0.545245 24.0081 0.699353 24.0647 0.867114C24.1213 1.03487 24.1425 1.21262 24.1269 1.38904V21.611C24.1425 21.7874 24.1213 21.9651 24.0647 22.1329C24.0081 22.3006 23.9174 22.4548 23.7982 22.5854C23.6791 22.7161 23.5342 22.8204 23.3727 22.8918C23.2112 22.9631 23.0366 23 22.8602 23C22.6837 23 22.5092 22.9631 22.3477 22.8918C22.1862 22.8204 22.0412 22.7161 21.9221 22.5854C21.803 22.4548 21.7122 22.3006 21.6556 22.1329C21.5991 21.9651 21.5779 21.7874 21.5935 21.611V1.38904Z" />
@@ -22,16 +22,16 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__item-link">Главная</a>
+              <a class="main-nav__item-link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__item-link" href="#">Фотографии</a>
+              <a class="main-nav__item-link" href="catalog.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="#">Конкурс</a>
+              <a class="main-nav__item-link">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="#">Html academy</a>
+              <a class="main-nav__item-link" href="https://htmlacademy.ru/">Html academy</a>
             </li>
           </ul>
         </nav>
@@ -39,54 +39,54 @@
     </header>
     <main class="page__main">
       <h1 class="visually-hidden">Форма участника конкурса</h1>
-      <div class="promo promo-top">
+      <div class="promo promo__top">
         <p class="promo__slogan">Конкурс на самое безбашенное путешествие PINK</p>
       </div>
       <div class="container">
         <form class="form">
           <p class="form__slogan">Поделитесь своей историей и получите шанс выйиграть ценный приз - 1000 миль на вашу боносную карту!</p>
           <fieldset class="form__fieldset form__name">
-            <label class="form__label" for="surname">Фамилия:</label>
-            <input class="form__input" id="surname" type="text" name="surname" placeholder="Укажатие фамилию *">
-            <label class="form__label" for="first-name">Имя:</label>
-            <input  class="form__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *">
-            <label class="form__label" for="second-name">Отчество:</label>
-            <input class="form__input" id="second-name" type="text" name="second-name" placeholder="Ну и отчество тоже">
+            <label class="form__name-label" for="surname">Фамилия:</label>
+            <input class="form__name-input" id="surname" type="text" name="surname" placeholder="Укажатие фамилию *">
+            <label class="form__name-label" for="first-name">Имя:</label>
+            <input  class="form__name-input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *">
+            <label class="form__name-label" for="second-name">Отчество:</label>
+            <input class="form__name-input" id="second-name" type="text" name="second-name" placeholder="Ну и отчество тоже">
           </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-            <input class="visually-hidden form__checkbox" type="checkbox" id="form-checkbox-first" name="checkbox-first" checked>
-            <label for="form-checkbox-first">Сделал селфи с акулой</label>
-            <input class="visually-hidden form__checkbox" type="checkbox" id="form-checkbox-second" name="checkbox-second" checked>
-            <label for="form-checkbox-second">Обгорел на пляже</label>
-            <input class="visually-hidden form__checkbox" type="checkbox" id="form-checkbox-third" name="checkbox-third">
-            <label for="form-checkbox-third">Видел Чака Норриса</label>
-            <input class="visually-hidden form__checkbox" type="checkbox" id="form-checkbox-fourth" name="checkbox-fourth">
-            <label for="form-checkbox-fourth">Накупил сувениров</label>
-            <input class="visually-hidden form__checkbox" type="checkbox" id="form-checkbox-fifth" name="checkbox-fifth" checked>
-            <label for="form-checkbox-fifth">Удержал башню</label>
-            <input class="visually-hidden form__checkbox" type="checkbox" id="form-checkbox-sixth" name="checkbox-sixth">
-            <label for="form-checkbox-sixth">Разгромил отель</label>
+          <fieldset class="form__fieldset form__achievement">
+            <p class="form__legend">Ваши безбашенные достижения в путешествии</p>
+            <input class="visually-hidden form__achievement-checkbox" type="checkbox" id="form-checkbox-first" name="checkbox-first" checked>
+            <label class="form__achievement-label" for="form-checkbox-first">Сделал селфи с акулой</label>
+            <input class="visually-hidden form__achievement-checkbox" type="checkbox" id="form-checkbox-second" name="checkbox-second" checked>
+            <label class="form__achievement-label" for="form-checkbox-second">Обгорел на пляже</label>
+            <input class="visually-hidden form__achievement-checkbox" type="checkbox" id="form-checkbox-third" name="checkbox-third">
+            <label class="form__achievement-label" for="form-checkbox-third">Видел Чака Норриса</label>
+            <input class="visually-hidden form__achievement-checkbox" type="checkbox" id="form-checkbox-fourth" name="checkbox-fourth">
+            <label class="form__achievement-label" for="form-checkbox-fourth">Накупил сувениров</label>
+            <input class="visually-hidden form__achievement-checkbox" type="checkbox" id="form-checkbox-fifth" name="checkbox-fifth" checked>
+            <label class="form__achievement-label" for="form-checkbox-fifth">Удержал башню</label>
+            <input class="visually-hidden form__achievement-checkbox" type="checkbox" id="form-checkbox-sixth" name="checkbox-sixth">
+            <label class="form__achievement-label" for="form-checkbox-sixth">Разгромил отель</label>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <label class="form__label" for="tel">Номер телефона</label>
-            <input class="form__input"  id="tel" type="tel" name="tel" placeholder="Номер пожалуйста">
-            <label class="form__label" for="email">Адрес почты</label>
-            <input class="form__input" id="email" type="email" name="email" placeholder="Введите почту *">
+          <fieldset class="form__fieldset form__adress">
+            <label class="form__adress-label" for="tel">Номер телефона</label>
+            <input class="form__adress-input"  id="tel" type="tel" name="tel" placeholder="Номер пожалуйста">
+            <label class="form__adress-label" for="email">Адрес почты</label>
+            <input class="form__adress-input" id="email" type="email" name="email" placeholder="Введите почту *">
           </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">С каким приложением путешествовали?</legend>
-            <input class="visually-hidden form__radio" type="radio" id="form-radio-ois" name="radio" value="ois" checked>
-            <label for="form-radio-ois">PINK для OIS</label>
-            <input class="visually-hidden form__radio" type="radio" id="form-radio-android" name="radio" value="android">
-            <label for="form-radio-ois">PINK для Android</label>
-            <input class="visually-hidden form__radio" type="radio" id="form-radio-windows" name="radio" value="windows">
-            <label for="form-radio-windows">Windows Phone</label>
+          <fieldset class="form__fieldset form__application">
+            <p class="form__legend">С каким приложением путешествовали?</p>
+            <input class="visually-hidden form__application-radio" type="radio" id="form-radio-ois" name="radio" value="ois" checked>
+            <label class="form__application-label" for="form-radio-ois">PINK для OIS</label>
+            <input class="visually-hidden form__application-radio" type="radio" id="form-radio-android" name="radio" value="android">
+            <label class="form__application-label" for="form-radio-ois">PINK для Android</label>
+            <input class="visually-hidden form__application-radio" type="radio" id="form-radio-windows" name="radio" value="windows">
+            <label class="form__application-label" for="form-radio-windows">Windows Phone</label>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Опишите свои эмоции</legend>
-            <label for="letter"></label>
-            <textarea id="letter" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <fieldset class="form__fieldset form__review">
+            <p class="form__legend">Опишите свои эмоции</p>
+            <label class="form__review-label" for="letter"></label>
+            <textarea class="form__review-textarea" id="letter" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <button class="form__button" type="submit">Отправить форму</button>
           <p class="form__comment">Обязательные поля</p>
@@ -95,7 +95,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="footer__logo">
+        <a class="footer__logo" href="index.html">
           <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M71.005 18.5486C71.0049 18.2125 71.1358 17.8898 71.3697 17.6494C71.6037 17.409 71.922 17.2701 72.2568 17.2623H79.39C84.4469 17.2623 87.7751 19.9645 87.7751 24.3918V24.4516C87.7751 29.2977 83.7415 31.8105 78.9727 31.8105H73.5384V38.611C73.5539 38.7874 73.5328 38.9651 73.4762 39.1329C73.4196 39.3006 73.3289 39.4547 73.2097 39.5854C73.0906 39.716 72.9457 39.8204 72.7842 39.8918C72.6227 39.9631 72.4481 40 72.2717 40C72.0952 40 71.9207 39.9631 71.7592 39.8918C71.5977 39.8204 71.4527 39.716 71.3336 39.5854C71.2145 39.4547 71.1237 39.3006 71.0671 39.1329C71.0106 38.9651 70.9894 38.7874 71.005 38.611V18.5486ZM79.0721 29.5171C82.7778 29.5171 85.2119 27.5228 85.2119 24.5314V24.4716C85.2119 21.2608 82.8175 19.5956 79.2509 19.5956H73.588V29.4772L79.0721 29.5171Z"/>
             <path d="M92.5935 18.389C92.5779 18.2126 92.5991 18.0349 92.6556 17.8671C92.7122 17.6994 92.803 17.5452 92.9221 17.4146C93.0412 17.2839 93.1862 17.1796 93.3477 17.1082C93.5092 17.0369 93.6837 17 93.8602 17C94.0366 17 94.2112 17.0369 94.3727 17.1082C94.5342 17.1796 94.6791 17.2839 94.7982 17.4146C94.9174 17.5452 95.0081 17.6994 95.0647 17.8671C95.1213 18.0349 95.1425 18.2126 95.1269 18.389V38.611C95.1425 38.7874 95.1213 38.9651 95.0647 39.1329C95.0081 39.3006 94.9174 39.4548 94.7982 39.5854C94.6791 39.7161 94.5342 39.8204 94.3727 39.8918C94.2112 39.9631 94.0366 40 93.8602 40C93.6837 40 93.5092 39.9631 93.3477 39.8918C93.1862 39.8204 93.0412 39.7161 92.9221 39.5854C92.803 39.4548 92.7122 39.3006 92.6556 39.1329C92.5991 38.9651 92.5779 38.7874 92.5935 38.611V18.389Z"/>
@@ -125,7 +125,7 @@
         </div>
         <p class="footer__creator">
           Разработано
-          <a href="#">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
             </svg>
