@@ -7,7 +7,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header__block">
         <a class="page-header__logo">
           <svg width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z" />
@@ -40,11 +40,11 @@
     <main class="page__main">
       <h1 class="visually-hidden">Приложение PINK</h1>
       <section class="promo">
+        <h2 class="visually-hidden">Знакомство с приложением</h2>
+        <div class="promo__top">
+          <p class="promo__slogan container">Взгляните на жизнь иначе!</p>
+        </div>
         <div class="container">
-          <h2 class="visually-hidden">Знакомство с приложением</h2>
-          <div class="promo__top">
-            <p class="promo__slogan">Взгляни на жизнь иначе</p>
-          </div>
           <div class="promo__bottom">
             <a class="promo__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
             <div class="promo-icon">
@@ -66,7 +66,7 @@
                 </li>
               </ul>
             </div>
-            <p class="promo__text">Доступно для iPhone, iPad, Android, Windows, Phone, OS X, Windows 8</p>
+            <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </section>
@@ -78,7 +78,7 @@
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__lead">Поднимает настроение</h3>
-              <p class="advantages__text">Приложение позволит победить осеннюю хандруи депрессию буквально в нсколько кликов!</p>
+              <p class="advantages__text">Приложение позволит победить осеннюю хандру и депрессию буквально в нсколько кликов!</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__lead">Меняет мир вокруг</h3>
@@ -89,9 +89,9 @@
               <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <div class="advantages__promo visually-hidden">
-            <h3 class="advantages__lead">Эффект на 24 часа!</h3>
-            <p class="advantages__text">Британские учёные првели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <div class="advantages__promo">
+            <h3 class="advantages__promo-lead">Эффект на 24 часа!</h3>
+            <p class="advantages__promo-text">Британские учёные првели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="advantages__promo-link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -100,15 +100,15 @@
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="container slider">
           <div class="reviews__list slider__list">
-              <blockquote class="reviews__item slider__item">
+              <blockquote class="reviews__item reviews__item--active slider__item">
                 <cite class="reviews__author-name">Николай Петров</cite>
-                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-                <p class="visually-hidden reviews__author-info">25 лет, водитель трамвая</p>
+                <p class="reviews__text"> &laquo; Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии! &raquo;</p>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
               </blockquote>
                <blockquote class="reviews__item slider__item">
                 <cite class="reviews__author-name">Николай Петров</cite>
-                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-                <p class="visually-hidden reviews__author-info">25 лет, водитель трамвая</p>
+                <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!  &raquo;</p>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
               </blockquote>
           </div>
           <div class="reviews__toggles slider__toggles">
@@ -185,19 +185,19 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="container">
-          <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__slogan">Остались вопросы?<br>Свяжитесь с нами!</p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <h3 class="contacts__lead">Звоните:</h3>
               <a class="contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
             <li class="contacts__item">
-              <h3 class="contacts__lead">Приезжайте в гости:</h3>
-              <address class="contacts__data">ул. Большая Конюшенная, 19/8</address>
-            </li>
-            <li class="contacts__item">
               <h3 class="contacts__lead">Пишите:</h3>
               <a class="contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__lead">Приезжайте в гости:</h3>
+              <address class="contacts__data">ул. Большая Конюшенная, 19/8</address>
             </li>
           </ul>
         </div>
@@ -209,7 +209,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__block">
         <a class="footer__logo">
           <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M71.005 18.5486C71.0049 18.2125 71.1358 17.8898 71.3697 17.6494C71.6037 17.409 71.922 17.2701 72.2568 17.2623H79.39C84.4469 17.2623 87.7751 19.9645 87.7751 24.3918V24.4516C87.7751 29.2977 83.7415 31.8105 78.9727 31.8105H73.5384V38.611C73.5539 38.7874 73.5328 38.9651 73.4762 39.1329C73.4196 39.3006 73.3289 39.4547 73.2097 39.5854C73.0906 39.716 72.9457 39.8204 72.7842 39.8918C72.6227 39.9631 72.4481 40 72.2717 40C72.0952 40 71.9207 39.9631 71.7592 39.8918C71.5977 39.8204 71.4527 39.716 71.3336 39.5854C71.2145 39.4547 71.1237 39.3006 71.0671 39.1329C71.0106 38.9651 70.9894 38.7874 71.005 38.611V18.5486ZM79.0721 29.5171C82.7778 29.5171 85.2119 27.5228 85.2119 24.5314V24.4716C85.2119 21.2608 82.8175 19.5956 79.2509 19.5956H73.588V29.4772L79.0721 29.5171Z"/>
@@ -239,8 +239,8 @@
           </ul>
         </div>
         <p class="footer__creator">
-          Разработано
-          <a href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="footer__creator-text">Разработано</span>
+          <a class="footer__creator-link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
             </svg>
