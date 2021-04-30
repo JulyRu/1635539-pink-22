@@ -1,13 +1,26 @@
 .promo-icon {
+  margin-bottom: 31px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .promo-icon__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 38px;
+  width: 204px;
 }
 
-.promo-icon__item {
-
+.promo-icon__item:not(:last-of-type) {
+  margin-right: 35px;
 }

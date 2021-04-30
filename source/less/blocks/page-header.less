@@ -1,11 +1,25 @@
 .page-header {
   background-color: @dark_blue;
+}
 
+.page-header__block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+}
+
+.page-header__logo {
+  display: block;
 }
 
 .page-header__logo svg{
   fill: @white;
-
 }
 
 .page-header__logo:hover svg {

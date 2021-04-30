@@ -1,22 +1,29 @@
 .footer-social {
-
+  margin-bottom: 41px;
 }
 
 .footer-social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .footer-social__item {
+  border-radius: 50%;
+  border: 3px solid @light_gray;
+  width: 42px;
+  height: 42px;
+}
 
+.footer-social__item:not(:last-of-type) {
+  margin-right: 14px;
 }
 
 .footer-social__item:hover {
-  border-radius: 50%;
   border: 3px solid @dark_blue;
-  width: 42px;
-  height: 42px;
 }
 
 .footer-social__item:active {

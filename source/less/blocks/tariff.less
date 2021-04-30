@@ -1,13 +1,30 @@
 .tariff {
+  background-color: @light_gray;
+  padding: 83px 0 49px 0;
 
+  @media (min-width: @tablet-width) {
+    padding: 60px 0 70px 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 159px 0 98px 0;
+  }
 }
 
 .tariff__table {
+  background-color: @white;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 45px;
+}
 
+.tariff__table td {
+  border: 2px solid @gray;
 }
 
 .tariff__block {
-  background-color: @dark_blue
+  background-color: @dark_blue;
+  border: 2px solid @gray;
 }
 
 .tariff__name {
@@ -50,5 +67,10 @@
 }
 
 .tariff__toggles {
+  display: flex;
+  justify-content: center;
 
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
