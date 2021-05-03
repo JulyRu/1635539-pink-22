@@ -42,23 +42,27 @@
         <h1 class="promo__slogan">Фотографии пользователей</h1>
       </div>
       <div class="gallery">
-        <div class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите как не хватает ваших!</div>
+        <div class="container">
+          <div class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите как не хватает ваших!</div>
+        </div>
         <div class="gallery__panorama">
-          <a href="#">
-            <img src="img/jpg/panorama.jpg" alt="Панорама дня">
+          <a class="gallery__link" href="#">
+            <img class="gallery__pic" src="img/jpg/panorama.jpg" alt="Панорама дня">
           </a>
           <span class="gallery__hit">Панорама дня</span>
-          <blockquote class="gallery__review">
-            <cite class="gallery__author">Анна</cite>
-            <time class="gallery__data" datetime="2021-04-09T00:00:00">(5 минут назад)</time>
-            <p class="gallery__text">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задайте свои вопросы!</p>
-          </blockquote>
-          <p class="gallery__like">Нравится</p>
+          <div class="container">
+            <blockquote class="gallery__review">
+              <cite class="gallery__author">Анна</cite>
+              <time class="gallery__data" datetime="2021-04-09T00:00:00">(5 минут назад)</time>
+              <p class="gallery__text">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задайте свои вопросы!</p>
+              <p class="gallery__like">Нравится</p>
+            </blockquote>
+          </div>
         </div>
         <div class="container">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-1.jpg" alt="Фото от пользователя Левон">
               </a>
               <blockquote class="gallery__review">
@@ -69,7 +73,7 @@
               </blockquote>
             </li>
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-2.jpg" alt="Фото от пользователя Антон">
               </a>
               <blockquote class="gallery__review">
@@ -80,7 +84,7 @@
               </blockquote>
             </li>
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-3.jpg" alt="Фото от пользователя Борис">
               </a>
               <blockquote class="gallery__review">
@@ -91,7 +95,7 @@
               </blockquote>
             </li>
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-4.jpg" alt="Фото от пользователя Сергей">
               </a>
               <blockquote class="gallery__review">
@@ -102,7 +106,7 @@
               </blockquote>
             </li>
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-5.jpg" alt="Фото от пользователя Максим">
               </a>
               <blockquote class="gallery__review">
@@ -113,7 +117,7 @@
               </blockquote>
             </li>
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-6.jpg" alt="Фото от пользователя Надежда">
               </a>
               <blockquote class="gallery__review">
@@ -127,8 +131,9 @@
           <div class="gallery__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</div>
         </div>
       </div>
-      <div class="container">
-        <form class="redactor" id="redactor" action="#" method="get">
+
+      <form class="redactor" id="redactor" action="#" method="get">
+        <div class="container">
           <img class="redactor__pic" src="img/jpg/photo-7.jpg" alt="Редактируемое фото">
           <ul class="redactor__list">
             <li class="redactor__item redactor__item--active">
@@ -169,8 +174,8 @@
           </ul>
           <button class="redactor__button redactor__button--active" type="submit">Запостить</button>
           <button class="redactor__button" type="reset">Отмена</button>
-        </form>
-      </div>
+        </div>
+      </form>
     </main>
     <footer class="footer">
       <div class="container">
@@ -214,5 +219,3 @@
     </footer>
   </body>
 </html>
-
-
