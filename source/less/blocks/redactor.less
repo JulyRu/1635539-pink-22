@@ -1,33 +1,129 @@
 .redactor {
   background-color: @light_gray;
+  padding: 20px 0 40px 0;
 }
 
+<<<<<<< Updated upstream
 .redactor__pic {
 
 }
+=======
+.redactor__box {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 47px;
+    padding: 57px 38px 54px 20px;
+  }
 
-.redactor__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @media (min-width: @desktop-width) {
+    padding: 57px 90px 57px 80px;
+  }
 }
 
-.redactor__item svg {
+.redactor__pic {
+  margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+// .redactor__block {
+
+// }
+>>>>>>> Stashed changes
+
+.redactor__unit {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.redactor__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 49px 0 37px;
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.redactor__scrolls {
+  margin-bottom: 73px;
+}
+
+.redactor__icon {
+  border: none;
+}
+
+.redactor__icon svg {
   fill: @dark_blue;
   opacity: 0.3;
 }
 
-.redactor__item--active svg {
+.redactor__icon--active svg {
   fill: @red;
   opacity: 1;
 }
 
+<<<<<<< Updated upstream
 .redactor__cut  {
 
 }
 
 .redactor__scroll {
 
+}
+=======
+// .redactor__icon-cut {
+
+// }
+
+// .redactor__icon-fill {
+
+// }
+
+// .redactor__icon-contrast {
+
+// }
+
+// .redactor__scroll {
+
+// }
+>>>>>>> Stashed changes
+
+.redactor__scroll-cut {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.redactor__scroll-fill {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.redactor__scroll-contrast {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.redactor__scroll--active {
+  display: block;
 }
 
 .redactor__bar {
@@ -42,14 +138,12 @@
   border:2px solid @red;
 }
 
-.redactor__fill svg {
-  fill: @dark_blue;
-  opacity: 0.3;
-}
-
-.redactor__contrast svg {
-  fill: @dark_blue;
-  opacity: 0.3;
+.redactor__buttons {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 44px;
+  }
 }
 
 .redactor__button {
@@ -59,8 +153,17 @@
   color: @dark_blue;
   border:3px solid @dark_blue;
   border-radius: 50px;
-  padding: 11px 0;
+  width: 100%;
+  padding: 21px 0;
   opacity: 0.3;
+}
+
+.redactor__button:first-of-type {
+  margin-bottom: 12px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .redactor__button--active {
