@@ -48,23 +48,27 @@
         </div>
       </div>
       <div class="gallery">
-        <div class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите как не хватает ваших!</div>
+        <div class="container">
+          <div class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите как не хватает ваших!</div>
+        </div>
         <div class="gallery__panorama">
-          <a href="#">
-            <img src="img/jpg/panorama.jpg" alt="Панорама дня">
+          <a class="gallery__link" href="#">
+            <img class="gallery__pic" src="img/jpg/panorama.jpg" alt="Панорама дня">
           </a>
           <span class="gallery__hit">Панорама дня</span>
-          <blockquote class="gallery__review">
-            <cite class="gallery__author">Анна</cite>
-            <time class="gallery__data" datetime="2021-04-09T00:00:00">(5 минут назад)</time>
-            <p class="gallery__text">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задайте свои вопросы!</p>
-          </blockquote>
-          <p class="gallery__like">Нравится</p>
+          <div class="container">
+            <blockquote class="gallery__review">
+              <cite class="gallery__author">Анна</cite>
+              <time class="gallery__data" datetime="2021-04-09T00:00:00">(5 минут назад)</time>
+              <p class="gallery__text">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задайте свои вопросы!</p>
+              <p class="gallery__like">Нравится</p>
+            </blockquote>
+          </div>
         </div>
         <div class="container">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-1.jpg" alt="Фото от пользователя Левон">
               </a>
               <blockquote class="gallery__review">
@@ -75,7 +79,7 @@
               </blockquote>
             </li>
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-2.jpg" alt="Фото от пользователя Антон">
               </a>
               <blockquote class="gallery__review">
@@ -86,7 +90,7 @@
               </blockquote>
             </li>
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-3.jpg" alt="Фото от пользователя Борис">
               </a>
               <blockquote class="gallery__review">
@@ -97,7 +101,7 @@
               </blockquote>
             </li>
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-4.jpg" alt="Фото от пользователя Сергей">
               </a>
               <blockquote class="gallery__review">
@@ -108,7 +112,7 @@
               </blockquote>
             </li>
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-5.jpg" alt="Фото от пользователя Максим">
               </a>
               <blockquote class="gallery__review">
@@ -119,7 +123,7 @@
               </blockquote>
             </li>
             <li class="gallery__item">
-              <a href="#">
+              <a class="gallery__link" href="#">
                 <img class="gallery__pic" src="img/jpg/photo-6.jpg" alt="Фото от пользователя Надежда">
               </a>
               <blockquote class="gallery__review">
@@ -133,21 +137,6 @@
           <div class="gallery__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</div>
         </div>
       </div>
-<<<<<<< Updated upstream
-      <div class="container">
-        <form class="redactor" id="redactor" action="#" method="get">
-          <img class="redactor__pic" src="img/jpg/photo-7.jpg" alt="Редактируемое фото">
-          <ul class="redactor__list">
-            <li class="redactor__item redactor__item--active">
-              <button class="redactor__cut" type="button" aria-label="Обрезать">
-                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" />
-                </svg>
-              </button>
-              <div class="redactor__scroll">
-                <div class="redactor__bar" aria-label="Диапазон редактирования "></div>
-                <div class="redactor__toggle"  aria-label="Выбрать зону"></div>
-=======
       <form class="redactor" id="redactor" action="#" method="get">
         <div class="container">
           <div class="redactor__box">
@@ -189,25 +178,15 @@
                     <div class="redactor__toggle" aria-label="Выбрать контрастность"></div>
                   </div>
                 </div>
->>>>>>> Stashed changes
               </div>
               <div class="redactor__buttons">
                 <button class="redactor__button redactor__button--active" type="submit">Запостить</button>
                 <button class="redactor__button" type="reset">Отмена</button>
               </div>
-<<<<<<< Updated upstream
-            </li>
-          </ul>
-          <button class="redactor__button redactor__button--active" type="submit">Запостить</button>
-          <button class="redactor__button" type="reset">Отмена</button>
-        </form>
-      </div>
-=======
             </div>
           </div>
         </div>
       </form>
->>>>>>> Stashed changes
     </main>
     <footer class="footer">
       <div class="container">
@@ -253,5 +232,3 @@
     </footer>
   </body>
 </html>
-
-
