@@ -1,23 +1,31 @@
 .page-header {
-  background-color: @dark_blue;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__block {
   display: flex;
   flex-direction: column;
+  padding: 0 0 0 20px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 27px;
-    padding-bottom: 43px;
+    padding: 20px 0 0 20px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    align-items: flex-start;
+    padding: 42px 130px 43px 130px;
   }
 }
 
 .page-header__logo {
   display: block;
+  padding: 21px 0 22px 0;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-right: 206px;
+  }
 }
 
 .page-header__logo svg {
