@@ -1,5 +1,6 @@
 .tariff {
   background-color: @light_gray;
+<<<<<<< Updated upstream
   padding: 75px 0 42px 0;
   position: relative;
 
@@ -9,37 +10,76 @@
 
   @media (min-width: @desktop-width) {
     padding: 60px 0 118px 0;
+=======
+  padding: 77px 0 45px 0;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 20px 35px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 130px 90px 130px;
+>>>>>>> Stashed changes
   }
 }
 
 .tariff:before {
   position: absolute;
   content: "";
+<<<<<<< Updated upstream
   width: 0;
   height: 0;
   top: -30px;
   border-bottom: 30px solid @light_gray;
   border-left: 320px solid transparent;
+=======
+  top: -18px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: @light_gray;
+  transform: skewY(-3deg);
+>>>>>>> Stashed changes
 }
 
 .tariff__table {
   background-color: @white;
   border-spacing: 0;
+<<<<<<< Updated upstream
   width: 100%;
+=======
+  width: 828px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+>>>>>>> Stashed changes
   margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+<<<<<<< Updated upstream
+=======
+    width: 100%;
+>>>>>>> Stashed changes
   }
 }
 
-.tariff__table td {
-  border: 2px solid @gray;
+.tariff__table tr {
+ border: 2px solid @light_gray;
 }
 
-.tariff__block {
+// .tariff__table td {
+//   border: none;
+// }
+
+.tariff__description {
   background-color: @dark_blue;
-  border: 2px solid @gray;
+  border-right: 1px solid @gray;
+  border-left: 1px solid @gray;
+  padding: 12px 0 30px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .tariff__name {
@@ -47,6 +87,8 @@
   line-height: 30px;
   font-weight: 700;
   color: @white;
+  text-transform: uppercase;
+  margin: 0 0 -3px;
 }
 
 .tariff__price {
@@ -54,15 +96,25 @@
   line-height: 30px;
   font-weight: 300;
   color: @white;
+  margin: 0;
 }
 
 .tariff__hit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: @white;
   background-color: @red;
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 110px;
+  height: 24px;
+  top: 17px;
+  left: -29px;
 }
 
 .tariff__options {
@@ -71,14 +123,34 @@
   line-height: 30px;
   font-weight: 400;
   color: @dark_blue;
+  width: 25%;
+  padding: 13px 0 16px 20px;
+  border-top: 1px solid @light_gray;
+  border-left: 2px solid @light_gray;
+  border-bottom: 1px solid @light_gray;
+  border-collapse: collapse;
+}
+
+.tariff__options--none {
+
 }
 
 .tariff__yes {
   background: url("../img/svg/yes.svg") no-repeat;
+  background-position: right 47% bottom 55%;
+  width: 7%;
+  border-top: 1px solid @light_gray;
+  border-bottom: 1px solid @light_gray;
+  border-collapse: collapse;
 }
 
 .tariff__no {
   background: url("../img/svg/no.svg") no-repeat;
+  background-position: right 47% bottom 55%;
+  width: 7%;
+  border-top: 1px solid @light_gray;;
+  border-bottom: 1px solid @light_gray;
+  border-collapse: collapse;
 }
 
 .tariff__toggles {

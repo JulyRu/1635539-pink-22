@@ -1,5 +1,15 @@
 .advantages {
   padding: 40px 0 0 0;
+<<<<<<< Updated upstream
+
+  @media (min-width: @tablet-width) {
+    padding: 45px 0 69px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 0 93px 0;
+=======
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding: 45px 0 69px 0;
@@ -9,6 +19,30 @@
     padding: 60px 0 93px 0;
   }
 }
+
+.advantages::before {
+  position: absolute;
+  content: "";
+  top: 230px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-color: @light_gray;
+  transform: skewY(-6deg);
+
+  @media (min-width: @tablet-width) {
+    top: 264px;
+    left: 0;
+    transform: skewY(-5deg);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 364px;
+    left: 0;
+>>>>>>> Stashed changes
+  }
+}
+
 
 .advantages__slogan {
   text-align: center;
@@ -31,15 +65,26 @@
 }
 
 .advantages__slogan:nth-of-type(2) {
+<<<<<<< Updated upstream
   margin-bottom: 65px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 65px;
+=======
+  margin-bottom: 85px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 101px;
+>>>>>>> Stashed changes
     padding: 0 100px 0 100px;
   }
 
   @media (min-width: @desktop-width) {
+<<<<<<< Updated upstream
     margin-bottom: 378px;
+=======
+    margin-bottom: 148px;
+>>>>>>> Stashed changes
     padding: 0 200px 0 200px;
   }
 }
@@ -47,6 +92,7 @@
 .advantages__list {
   list-style-type: none;
   margin: 0;
+<<<<<<< Updated upstream
   padding: 49px 0 318px 0;
   background-color: @light_gray;
   position: relative;
@@ -54,10 +100,23 @@
   @media (min-width: @tablet-width) {
     padding: 38px 0 40px 0;
     margin-bottom: 98px;
+=======
+  padding: 27px 0 318px 0;
+  background-color: @light_gray;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    padding: 2px 0 40px 0;
+    margin-bottom: 98px;
+    z-index: 0;
+    overflow: visible;
+>>>>>>> Stashed changes
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
+<<<<<<< Updated upstream
   }
 }
 
@@ -69,6 +128,46 @@
   top: -30px;
   border-bottom: 30px solid @light_gray;
   border-left: 320px solid transparent;
+=======
+    padding: 268px 0 40px 0;
+  }
+}
+
+.advantages__list:after {
+  content: url("../img/png/screen-3.png");
+  position: absolute;
+  left: 76px;
+  top: 460px;
+  transform: scale(0.8);
+
+  @media (min-width: @tablet-width) {
+    left: 69px;
+    top: 60px;
+    transform: scale(1.4);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__list::before {
+  content: url("../img/png/iphone.png");
+  position: absolute;
+  left: 67px;
+  top: 420px;
+  transform: scale(0.83);
+
+  @media (min-width: @tablet-width) {
+    left: 60px;
+    top: 20px;
+    transform: scale(1.45);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+>>>>>>> Stashed changes
 }
 
 .advantages__list-block {
@@ -91,6 +190,63 @@
   }
 }
 
+<<<<<<< Updated upstream
+=======
+.advantages__item:first-of-type::before {
+  @media (min-width: @desktop-width) {
+    content: url("../img/png/iphone.png");
+    position: absolute;
+    left: 190px;
+    top: -90px;
+  }
+}
+
+.advantages__item:first-of-type::after {
+  @media (min-width: @desktop-width) {
+    content: url("../img/png/screen-1.png");
+    position: absolute;
+    left: 198px;
+    top: -50px;
+  }
+}
+
+.advantages__item:nth-of-type(2)::before {
+  @media (min-width: @desktop-width) {
+    content: url("../img/png/iphone.png");
+    position: absolute;
+    left: 510px;
+    top: -90px;
+  }
+}
+
+.advantages__item:nth-of-type(2)::after {
+  @media (min-width: @desktop-width) {
+    content: url("../img/png/screen-2.png");
+    position: absolute;
+    left: 520px;
+    top: -50px;
+  }
+}
+
+.advantages__item:last-of-type::before {
+  @media (min-width: @desktop-width) {
+    content: url("../img/png/iphone.png");
+    position: absolute;
+    left: 830px;
+    top: -90px;
+  }
+}
+
+.advantages__item:last-of-type::after {
+  @media (min-width: @desktop-width) {
+    content: url("../img/png/screen-3.png");
+    position: absolute;
+    left: 840px;
+    top: -50px;
+  }
+}
+
+>>>>>>> Stashed changes
 .advantages__item:not(:last-of-type) {
   margin-bottom: 30px;
 
@@ -150,9 +306,14 @@
 .advantages__promo {
   display: none;
   margin: 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: block;
+<<<<<<< Updated upstream
+=======
+    z-index: 2;
+>>>>>>> Stashed changes
   }
 
   @media (min-width: @desktop-width) {
@@ -160,6 +321,24 @@
   }
 }
 
+<<<<<<< Updated upstream
+=======
+.advantages__promo::before {
+  @media (min-width: @tablet-width) {
+    content: url("../img/png/timer.png");
+    position: absolute;
+    left: 20px;
+    top: -45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 165px;
+    top: 65px;
+    transform: scale(1.25);
+  }
+}
+
+>>>>>>> Stashed changes
 .advantages__promo-block {
 
   @media (min-width: @tablet-width) {
