@@ -2,7 +2,10 @@
   background-color: @dark_blue;
   z-index: -5;
   position: relative;
-  background-image: url("../img/jpg/back-desktop.jpg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/jpg/back-desktop.jpg");
+  }
 }
 
 .promo__top {
