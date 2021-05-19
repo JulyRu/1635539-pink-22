@@ -89,45 +89,9 @@
   }
 }
 
-.advantages__list:after {
-  content: url("../img/png/screen-3.png");
-  position: absolute;
-  left: 76px;
-  top: 460px;
-  transform: scale(0.8);
-
-  @media (min-width: @tablet-width) {
-    left: 69px;
-    top: 60px;
-    transform: scale(1.4);
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.advantages__list::before {
-  content: url("../img/png/iphone.png");
-  position: absolute;
-  left: 67px;
-  top: 420px;
-  transform: scale(0.83);
-
-  @media (min-width: @tablet-width) {
-    left: 60px;
-    top: 20px;
-    transform: scale(1.45);
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
 .advantages__list-block {
   @media (min-width: @tablet-width) {
-    padding: 0 0 0 310px;
+    // padding: 0 0 0 310px;
   }
 
   @media (min-width: @desktop-width) {
@@ -135,67 +99,81 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 20px 0 30px;
   }
 }
 
 .advantages__item {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 0 310px;
+  }
   @media (min-width: @desktop-width) {
     width: 250px;
+    padding: 0 20px 0 30px;
+  }
+}
+
+.advantages__item:first-of-type {
+  position: relative;
+}
+
+.advantages__item:first-of-type::before {
+  content: "";
+  background-image: url("../img/png/phone_5.png");
+  background-repeat: no-repeat;
+  width: 268px;
+  height: 547px;
+  position: absolute;
+  left: 76px;
+  top: 460px;
+
+  @media (min-width: @tablet-width) {
+    left: -310px;
+    top: -70px;
+    z-index: 1;
   }
 }
 
 .advantages__item:first-of-type::before {
   @media (min-width: @desktop-width) {
-    content: url("../img/png/iphone.png");
+    content: "";
+    background-image: url("../img/png/phone_6.png");
+    background-repeat: no-repeat;
+    width: 308px;
+    height: 490px;
     position: absolute;
-    left: 190px;
-    top: -90px;
-  }
-}
-
-.advantages__item:first-of-type::after {
-  @media (min-width: @desktop-width) {
-    content: url("../img/png/screen-1.png");
-    position: absolute;
-    left: 198px;
-    top: -50px;
+    left: 0;
+    top: -357px;
+    z-index: -1;
   }
 }
 
 .advantages__item:nth-of-type(2)::before {
   @media (min-width: @desktop-width) {
-    content: url("../img/png/iphone.png");
+    content: "";
+    background-image: url("../img/png/phone_7.png");
+    background-repeat: no-repeat;
+    width: 308px;
+    height: 490px;
     position: absolute;
-    left: 510px;
-    top: -90px;
+    left: 0;
+    top: -357px;
+    z-index: -1;
   }
 }
 
-.advantages__item:nth-of-type(2)::after {
+.advantages__item:nth-of-type(3)::before {
   @media (min-width: @desktop-width) {
-    content: url("../img/png/screen-2.png");
+    content: "";
+    background-image: url("../img/png/phone_8.png");
+    background-repeat: no-repeat;
+    width: 308px;
+    height: 490px;
     position: absolute;
-    left: 520px;
-    top: -50px;
-  }
-}
-
-.advantages__item:last-of-type::before {
-  @media (min-width: @desktop-width) {
-    content: url("../img/png/iphone.png");
-    position: absolute;
-    left: 830px;
-    top: -90px;
-  }
-}
-
-.advantages__item:last-of-type::after {
-  @media (min-width: @desktop-width) {
-    content: url("../img/png/screen-3.png");
-    position: absolute;
-    left: 840px;
-    top: -50px;
+    left: 0;
+    top: -357px;
+    z-index: -1;
   }
 }
 
@@ -262,7 +240,6 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    z-index: 2;
   }
 
   @media (min-width: @desktop-width) {
@@ -272,15 +249,21 @@
 
 .advantages__promo::before {
   @media (min-width: @tablet-width) {
-    content: url("../img/png/timer.png");
+    content: "";
+    background-image: url("../img/svg/timer.svg");
+    background-repeat: no-repeat;
+    width: 238px;
+    height: 276px;
     position: absolute;
     left: 20px;
     top: -45px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 165px;
-    top: 65px;
+    left: 168px;
+    top: 67px;
+    width: 298px;
+    height: 345px;
     transform: scale(1.25);
   }
 }

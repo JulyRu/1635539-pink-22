@@ -105,8 +105,14 @@
 }
 
 .tariff__options--none {
-
+  @media (min-width: @tablet-width) {
+    display: none;
 }
+
+.tariff__options--notmobile {
+  display: none;
+}
+
 
 .tariff__yes {
   background: url("../img/svg/yes.svg") no-repeat;
