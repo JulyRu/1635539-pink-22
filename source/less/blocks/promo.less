@@ -1,26 +1,80 @@
 .promo {
   background-color: @dark_blue;
+  z-index: -5;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/jpg/back-desktop.jpg");
+  }
 }
 
 .promo__top {
   background-image: url("../img/jpg/back-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 462px;
+  // height: 394px;
+  height: 466px;
+
+  @media (min-width: @tablet-width) {
+    height: 100%;
+    background-image: none;
+  }
 }
 
 .promo__bottom {
   background-color: @dark_blue;
-  padding: 28px 0 38px 0;
+  padding: 26px 0 31px 0;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
-    padding: 20px 320px 119px 0;
+    padding: 0 320px 113px 0;
     width: 300px;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   @media (min-width: @desktop-width) {
-    padding: 30px 640px 130px 0;
+    padding: 13px 640px 125px 0;
     width: 300px;
+  }
+}
+
+.promo__bottom::before {
+  content:url("../img/png/phone.png");
+  position: absolute;
+  left: -20px;
+  top: -290px;
+
+  @media (min-width: @tablet-width) {
+    content:url("../img/png/phone-2.png");
+    left: -20px;
+    top: -195px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 208px;
+    top: -175px;
+    transform: scale(1.18);
+  }
+}
+
+.promo__bottom::after {
+  content:url("../img/png/screen.png");
+  position: absolute;
+  left: 84px;
+  top: -258px;
+
+   @media (min-width: @tablet-width) {
+    left: 394px;
+    top: -65px;
+    transform: scale(1.75);
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 647px;
+    top: -53px;
+    transform: scale(2.05);
   }
 }
 
@@ -31,21 +85,35 @@
   font-weight: 300;
   color: @white;
   text-align: center;
-  padding: 29px 20px 0 20px;
-
+  padding: 92px 20px 0 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: center;
     font-size: 40px;
     line-height: 48px;
-    padding: 102px 340px 19px 40px;
+    padding: 202px 350px 30px 30px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68px;
-    padding: 114px 660px 21px 40px;
+    padding: 210px 675px 21px 35px;
+  }
+}
+
+.promo__case {
+  background-image: url("../img/jpg/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 238px;
+
+  @media (min-width: @tablet-width) {
+    height: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 395px;
   }
 }
 
@@ -56,24 +124,25 @@
   font-weight: 300;
   color: @white;
   text-align: center;
-  padding: 36px 26px 0 26px;
+  padding: 95px 15px 0 15px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: center;
     font-size: 50px;
     line-height: 68px;
-    padding: 81px 0 0 0;
+    padding: 177px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 114px 50px 0 50px;
+    padding: 170px 50px 0 50px;
   }
 }
 
 .promo__button {
   display: flex;
   width: 100%;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
   font-size: 18px;
@@ -82,8 +151,8 @@
   color: @white;
   border: 3px solid @white;
   border-radius: 50px;
-  padding: 11px 0;
-  margin-bottom: 38px;
+  padding: 16px 0;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 46px;
@@ -91,7 +160,18 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 67px;
+    font-size: 21px;
   }
+}
+
+.promo__button:hover {
+  background-color: @white;
+  color: @red;
+  border-color: @black;
+}
+
+.promo__button:active {
+  color: rgba(210, 40, 86, 0.3);
 }
 
 .promo__text {
@@ -101,7 +181,6 @@
   font-weight: 300;
   color: @white;
   text-align: center;
-  // width: 280px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
