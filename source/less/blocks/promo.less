@@ -5,6 +5,7 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/jpg/back-desktop.jpg");
+    background-size: cover;
   }
 }
 
@@ -40,13 +41,13 @@
 }
 
 .promo__bottom::before {
-  content:url("../img/png/phone.png");
+  content: url("../img/png/phone.png");
   position: absolute;
   left: -20px;
   top: -290px;
 
   @media (min-width: @tablet-width) {
-    content:url("../img/png/phone-2.png");
+    content: url("../img/png/phone-2.png");
     left: -20px;
     top: -195px;
     z-index: -1;
@@ -60,12 +61,12 @@
 }
 
 .promo__bottom::after {
-  content:url("../img/png/screen.png");
+  content: url("../img/png/screen.png");
   position: absolute;
   left: 84px;
   top: -258px;
 
-   @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     left: 394px;
     top: -65px;
     transform: scale(1.75);

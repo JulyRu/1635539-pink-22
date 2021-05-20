@@ -98,9 +98,9 @@
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
           <p class="advantages__slogan">Нам есть, что вам предложить!</p>
         </div>
-        <ul class="advantages__list">
+        <div class="advantages__list-block">
           <div class="container">
-            <div class="advantages__list-block">
+            <ul class="advantages__list">
               <li class="advantages__item">
                 <h3 class="advantages__lead">Поднимает настроение</h3>
                 <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -113,9 +113,9 @@
                 <h3 class="advantages__lead">Заводит новых друзей</h3>
                 <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
-            </div>
+            </ul>
           </div>
-        </ul>
+        </div>
         <div class="advantages__promo">
           <div class="container">
             <div class="advantages__promo-block">
@@ -130,7 +130,7 @@
       <section class="reviews">
         <div class="container">
           <h2 class="visually-hidden">Отзывы</h2>
-          <div class="slider">
+          <div class="slider reviews__quotes">
             <div class="reviews__list slider__list">
                 <blockquote class="reviews__item reviews__item--active slider__item">
                   <cite class="reviews__author-name">Николай Петров</cite>
@@ -156,69 +156,64 @@
         <div class="slider">
           <table class="tariff__table">
             <tr>
-              <th class="tariff__options--notmobile"></th>
-              <th colspan="2" class="tariff__description">
+              <th class="tariff__options--notmobile  tariff__notstyle"></th>
+              <th class="tariff__description">
                 <p class="tariff__name">База</p>
                 <p class="tariff__price">1,99 USD</p>
               </th>
-              <th colspan="2" class="tariff__description">
+              <th class="tariff__description">
                 <p class="tariff__name">Стандарт</p>
                 <p class="tariff__price">3,99 USD</p>
                 <div class="tariff__hit">Хит</div>
               </th>
-              <th colspan="2"  class="tariff__description">
+              <th class="tariff__description">
                 <p class="tariff__name">Анлим</p>
                 <p class="tariff__price">9,99 USD</p>
               </th>
             </tr>
             <tr>
-              <td class="tariff__options tariff__options--notmobile">Розовый фильтр</td>
-              <td class="tariff__options">Розовый фильтр</td>
-              <td class="tariff__yes">
+              <td class="tariff__options--notmobile"><span class="tariff__options">Розовый фильтр</span></td>
+              <td class="tariff__yes tariff__cell">
                 <p class="visually-hidden">Да</p>
+                <span class="tariff__options tariff__options--none">Розовый фильтр</span>
               </td>
-              <td class="tariff__options tariff__options--none">Розовый фильтр</td>
-              <td class="tariff__yes">
+              <td class="tariff__yes tariff__cell">
                 <p class="visually-hidden">Да</p>
+                <span class="tariff__options tariff__options--none">Розовый фильтр</span>
               </td>
-              <td class="tariff__options tariff__options--none">Розовый фильтр</td>
-              <td class="tariff__yes tariff__three">
+              <td class="tariff__yes tariff__cell tariff__three">
                 <p class="visually-hidden">Да</p>
+                <span class="tariff__options tariff__options--none">Розовый фильтр</span>
               </td>
             </tr>
             <tr>
-              <td class="tariff__options tariff__options--notmobile">Смайлики</td>
-              <td class="tariff__options">Смайлики</td>
-              <td class="tariff__no">
+              <td class="tariff__options--notmobile"><span class="tariff__options">Смайлики</span></td>
+              <td class="tariff__no tariff__cell">
                 <p class="visually-hidden">Нет</p>
+                <span class="tariff__options tariff__options--none">Смайлики</span>
               </td>
-              <td class="tariff__options tariff__options--none">Смайлики</td>
-
-              <td class="tariff__yes">
+              <td class="tariff__yes tariff__cell">
                 <p class="visually-hidden">Да</p>
+                <span class="tariff__options tariff__options--none">Смайлики</span>
               </td>
-              <td class="tariff__options tariff__options--none">Смайлики</td>
-
-              <td class="tariff__yes">
+              <td class="tariff__yes tariff__cell">
                 <p class="visually-hidden">Да</p>
+                <span class="tariff__options tariff__options--none">Смайлики</span>
               </td>
             </tr>
             <tr>
-              <td class="tariff__options tariff__options--notmobile">Комментарии</td>
-              <td class="tariff__options">Комментарии</td>
-
-              <td class="tariff__no">
+              <td class="tariff__options--notmobile"><span class="tariff__options">Комментарии</span></td>
+              <td class="tariff__no tariff__cell">
                 <p class="visually-hidden">Нет</p>
+                <span class="tariff__options tariff__options--none">Комментарии</span>
               </td>
-              <td class="tariff__options tariff__options--none">Комментарии</td>
-
-              <td class="tariff__no">
+              <td class="tariff__no tariff__cell">
                 <p class="visually-hidden">Нет</p>
+                <span class="tariff__options tariff__options--none">Комментарии</span>
               </td>
-              <td class="tariff__options tariff__options--none">Комментарии</td>
-
-              <td class="tariff__yes">
-                <p class="visually-hidden tariff__options--none">Да</p>
+              <td class="tariff__yes tariff__cell">
+                <p class="visually-hidden">Да</p>
+                <span class="tariff__options tariff__options--none">Комментарии</span>
               </td>
             </tr>
           </table>
