@@ -7,8 +7,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 20px 0 0 0;
-     background-color: @white;
+    padding: 0;
+    background-color: @white;
   }
 }
 
@@ -21,7 +21,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 35px 90px 57px 80px;
+    padding: 60px 90px 75px 80px;
     background-color: @light_gray;
   }
 }
@@ -99,6 +99,14 @@
   }
 }
 
+.redactor__icon:nth-of-type(3) {
+  @media (min-width: @desktop-width) {
+    padding: 5px 0 0 5px;
+  }
+}
+
+
+
 .redactor__icon:not(:last-of-type) {
   @media (min-width: @tablet-width) {
     margin-bottom: 26px;
@@ -119,7 +127,7 @@
     opacity: 1;
   }
 
-    @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     transform: scale(1);
   }
 }
@@ -268,6 +276,10 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
 
