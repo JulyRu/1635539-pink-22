@@ -45,3 +45,32 @@
   background: @white;
   opacity: 1;
 }
+
+
+.slider-button-right {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 212px;
+    left: 910px;
+  }
+}
+
+.slider-button-left {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 215px;
+    left: -10px;
+  }
+}
