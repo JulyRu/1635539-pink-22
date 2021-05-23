@@ -120,26 +120,36 @@
 
 .advantages__item:first-of-type::before {
   content: "";
-  background-image: url("../img/png/phone_5.png");
+  background-image: url("../img/png/iphone-2-mobile.png");
   background-repeat: no-repeat;
-  width: 268px;
-  height: 547px;
+  width: 157px;
+  height: 320px;
   position: absolute;
-  left: 8px;
-  top: 312px;
-  transform: scale(0.58);
+  left: 62px;
+  top: 428px;
+  background-size: 100% 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/png/iphone-2-mobile@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
+    background-image: url("../img/png/iphone-2-tablet.png");
     left: 0;
     top: -68px;
-    height: 478px;
-    transform: scale(1);
+    width: 268px;
+    // height: 478px;
+    height: 547px;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/png/iphone-2-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
     content: "";
-    background-image: url("../img/png/phone_6.png");
+    background-image: url("../img/png/iphone-2-desktop.png");
     background-repeat: no-repeat;
     width: 308px;
     height: 490px;
@@ -147,13 +157,17 @@
     left: 0;
     top: -357px;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/png/iphone-2-desktop@2x.png");
+    }
   }
 }
 
 .advantages__item:nth-of-type(2)::before {
   @media (min-width: @desktop-width) {
     content: "";
-    background-image: url("../img/png/phone_7.png");
+    background-image: url("../img/png/iphone-3-desktop.png");
     background-repeat: no-repeat;
     width: 308px;
     height: 490px;
@@ -161,13 +175,18 @@
     left: 0;
     top: -357px;
     z-index: -1;
+    background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/png/iphone-3-desktop@2x.png");
+    }
   }
 }
 
 .advantages__item:nth-of-type(3)::before {
   @media (min-width: @desktop-width) {
     content: "";
-    background-image: url("../img/png/phone_8.png");
+    background-image: url("../img/png/iphone-4-desktop@2x.png");
     background-repeat: no-repeat;
     width: 308px;
     height: 490px;
@@ -175,6 +194,11 @@
     left: 0;
     top: -357px;
     z-index: -1;
+    background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/png/iphone-4-desktop@2x.png");
+    }
   }
 }
 
