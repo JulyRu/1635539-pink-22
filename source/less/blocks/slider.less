@@ -52,12 +52,14 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    background-color: @dark_blue;
     border: 0;
     outline: none;
     background-color: transparent;
     position: absolute;
     top: 212px;
     left: 910px;
+    opacity: 0.3;
   }
 }
 
@@ -68,9 +70,30 @@
     display: block;
     border: 0;
     outline: none;
-    background-color: transparent;
     position: absolute;
+    background-color: @white;
     top: 215px;
     left: -10px;
+    opacity: 0.3;
   }
+}
+
+.slider-button-left svg {
+  fill: @dark_blue;
+}
+
+.slider-button-left:hover svg {
+  opacity: 0.6;
+}
+
+.slider-button-right:hover svg {
+  opacity: 0.6;
+}
+
+.slider-button-left:active svg {
+  opacity: 0.1;
+}
+
+.slider-button-right:active {
+  opacity: 0.1;
 }

@@ -105,8 +105,6 @@
   }
 }
 
-
-
 .redactor__icon:not(:last-of-type) {
   @media (min-width: @tablet-width) {
     margin-bottom: 26px;
@@ -237,6 +235,10 @@
   top: -6px;
 }
 
+.redactor__scroll--active .redactor__toggle {
+  background-color: @red;
+}
+
 .redactor__buttons {
   @media (min-width: @tablet-width) {
     padding-left: 10px;
@@ -254,12 +256,9 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  color: @dark_blue;
-  border: 3px solid @dark_blue;
   border-radius: 50px;
   width: 100%;
   padding: 16px 0;
-  opacity: 0.3;
   font-family: inherit;
 
   @media (min-width: @tablet-width) {
@@ -283,8 +282,31 @@
   }
 }
 
-.redactor__button--active {
+.redactor__button--ok {
+  border: 3px solid @red;
   color: @red;
-  border-color: @red;
-  opacity: 1;
+}
+
+.redactor__button--ok:hover {
+  background-color: @red;
+  color: @white;
+}
+
+.redactor__button--ok:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.redactor__button--not {
+  border: 3px solid @dark_blue;
+  opacity: 0.1;
+  color: @dark_blue;
+}
+
+.redactor__button--not:hover {
+  opacity: 0.3;
+}
+
+.redactor__button--not:active {
+  background-color: @dark_blue;
+  color: rgba(255, 255, 255, 0.3);
 }

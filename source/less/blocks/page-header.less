@@ -13,13 +13,13 @@
   padding: 0 0 0 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 20px 0 0 20px;
+    padding: 20px 0 15px 20px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     align-items: flex-start;
-    padding: 42px 130px 43px 130px;
+    padding: 42px 130px 30px 130px;
     margin: 0 auto;
     width: 940px;
   }
@@ -27,11 +27,49 @@
 
 .page-header__logo {
   display: block;
-  padding: 23px 0 22px 0;
+  padding: 23px 0 16px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 20px 0 21px 0;
+  }
 
   @media (min-width: @desktop-width) {
     padding: 0;
     margin-right: 206px;
+  }
+}
+
+.page-header__pink {
+  display: block;
+  width: 74px;
+  height: 23px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__pink-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__pink-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 147px;
+    height: 40px;
   }
 }
 
@@ -44,6 +82,6 @@
 }
 
 .page-header__logo:active svg {
-  fill: @black;
+  fill: @red;
   opacity: 0.3;
 }
