@@ -130,6 +130,18 @@
   color: @white;
 }
 
+.modal__button:hover {
+  background-color: @dark_green;
+}
+
+.modal__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.modal__button:disabled {
+  background-color: @gray;
+}
+
 .modal--good {
   display: none;
   height: 380px;
@@ -144,7 +156,7 @@
 }
 
 .modal--bad {
-  display: block;
+  display: none;
   height: 289px;
 
   @media (min-width: @tablet-width) {

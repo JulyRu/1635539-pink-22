@@ -166,6 +166,14 @@
   padding: 15px 19px;
 }
 
+.form__name-input:hover {
+  border-color: @dark_blue;
+}
+
+.form__name-input:active {
+  border-color: @red;
+}
+
 .form__name-input::placeholder {
   color: @dark_blue;
 }
@@ -266,6 +274,14 @@
   content: "";
   background-color: @white;
   border: 2px solid @gray;
+}
+
+.form__achievement-checkbox:hover + label::before {
+  border-color: @dark_blue;
+}
+
+.form__achievement-checkbox:active + label::before {
+  border-color: @red;
 }
 
 .form__achievement-checkbox:checked + label::after {
@@ -396,6 +412,14 @@
     margin-bottom: 10px;
     width: 375px;
   }
+}
+
+.form__address-input:hover {
+  border-color: @dark_blue;
+}
+
+.form__address-input:active {
+  border-color: @red;
 }
 
 // .form__address-input:not(:last-of-type) {
@@ -555,6 +579,14 @@
   }
 }
 
+.form__application-radio:hover + label::before {
+  border-color: @dark_blue;
+}
+
+.form__application-radio:active + label::before {
+  border-color: @red;
+}
+
 .form__application-radio:checked + label::after {
   content: "";
   position: absolute;
@@ -690,6 +722,18 @@
     width: 300px;
     margin: 0;
   }
+}
+
+.form__button:hover {
+  background-color: @dark_green;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__button:disabled {
+  background-color: @gray;
 }
 
 .form__comment {
