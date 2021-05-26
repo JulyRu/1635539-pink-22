@@ -160,7 +160,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
+    // scripts,
     sprite,
     createWebp
   ),

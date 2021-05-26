@@ -4,56 +4,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="page-header__block">
-        <a class="page-header__logo">
-          <svg class="page-header__pink" width="74" height="23">
+    <header class="header">
+      <div class="header__block">
+        <a class="header__logo" href="index.html">
+          <svg class="header__pink" width="74" height="23">
             <use href="img/sprite.svg#pink"></use>
           </svg>
-          <svg class="page-header__pink-tablet" width="145" height="40" >
+          <svg class="header__pink-tablet" width="145" height="40" >
             <use href="img/sprite.svg#pink-tablet"></use>
           </svg>
-          <svg class="page-header__pink-desktop" width="147" height="40" >
+          <svg class="header__pink-desktop" width="147" height="40" >
             <use href="img/sprite.svg#pink-desktop"></use>
           </svg>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-            <div class="main-nav__button-open">
+        <nav class="header-nav header-nav--closed header-nav--nojs">
+          <button class="header-nav__toggle" type="button">
+            <span class="header-nav__button-open">
               <svg width="74" height="23">
                 <use href="img/sprite.svg#burger"></use>
               </svg>
-            </div>
-            <div class="main-nav__button-close">
+            </span>
+            <span class="header-nav__button-close">
               <svg width="23" height="23">
                 <use href="img/sprite.svg#close_menu_btn"></use>
               </svg>
-            </div>
+            </span>
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="index.html">
-                <div class="main-nav__item-underline">Главная</div>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__item-link" href="index.html">
+                <div class="header-nav__item-underline">Главная</div>
               </a>
             </li>
-            <li class="main-nav__item ">
-              <a class="main-nav__item-link" href="catalog.html">
-                <div class="main-nav__item-underline">Фотографии</div>
+            <li class="header-nav__item ">
+              <a class="header-nav__item-link" href="catalog.html">
+                <div class="header-nav__item-underline">Фотографии</div>
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__item-link">
-                <div class="main-nav__item-underline">Конкурс</div>
+            <li class="header-nav__item header-nav__item--active">
+              <a class="header-nav__item-link">
+                <div class="header-nav__item-underline">Конкурс</div>
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="https://htmlacademy.ru/">
-                <div class="main-nav__item-underline">HTML Academy</div>
+            <li class="header-nav__item">
+              <a class="header-nav__item-link" href="https://htmlacademy.ru/">
+                <div class="header-nav__item-underline">HTML Academy</div>
               </a>
             </li>
           </ul>
@@ -69,7 +68,7 @@
           </div>
         </div>
       </div>
-      <form class="form form__block">
+      <form class="form">
         <div class="container form__slogan-block">
           <p class="form__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
             <span class="form__slogan-span">Пожалуйста, заполните форму ниже:</span>
@@ -131,11 +130,11 @@
             <fieldset class="form__fieldset form__address-unit">
               <legend class="form__address-legend">Контактная информация</legend>
               <div class="form__address-block">
-                <label class="form__address-label form__address--tel" for="tel">Номер телефона</label>
+                <label class="form__address-label form__address-label--tel" for="tel">Номер телефона</label>
                 <input class="form__address-input"  id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
               </div>
               <div class="form__address-block">
-                <label class="form__address-label form__address--email" for="email">Адрес почты</label>
+                <label class="form__address-label form__address-label--email" for="email">Адрес почты</label>
                 <input class="form__address-input" id="email" type="email" name="email" placeholder="Введите почту *">
               </div>
             </fieldset>
@@ -146,7 +145,7 @@
             <fieldset class="form__fieldset">
               <legend class="form__application-legend">С каким приложением путешествовали?</legend>
               <div class="form__application-unit">
-                <input class="visually-hidden form__application-radio" type="radio" id="form-radio-ois" name="radio" value="ois"checked>
+                <input class="visually-hidden form__application-radio" type="radio" id="form-radio-ois" name="radio" value="ois" checked>
                 <label class="form__application-label" for="form-radio-ois">Pink для iOS</label>
                 <input class="visually-hidden form__application-radio" type="radio" id="form-radio-android" name="radio" value="android" >
                 <label class="form__application-label" for="form-radio-android">Pink на Android</label>
@@ -174,9 +173,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__block">
-          <a class="footer__logo">
-            <svg width="147" height="40">
+          <a class="footer__logo" href="index.html">
+            <svg class="footer__logo-notdesktop" width="147" height="40">
               <use href="img/sprite.svg#logotype"></use>
+            </svg>
+            <svg class="footer__logo-desktop" width="147" height="40" >
+              <use href="img/sprite.svg#logotype-desktop"></use>
             </svg>
           </a>
           <div class="footer-social">

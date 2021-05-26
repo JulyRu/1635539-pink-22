@@ -4,56 +4,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="page-header__block">
-        <a class="page-header__logo">
-          <svg class="page-header__pink" width="74" height="23">
+    <header class="header">
+      <div class="header__block">
+        <a class="header__logo">
+          <svg class="header__pink" width="74" height="23">
             <use href="img/sprite.svg#pink"></use>
           </svg>
-          <svg class="page-header__pink-tablet" width="145" height="40" >
+          <svg class="header__pink-tablet" width="145" height="40" >
             <use href="img/sprite.svg#pink-tablet"></use>
           </svg>
-          <svg class="page-header__pink-desktop" width="147" height="40" >
+          <svg class="header__pink-desktop" width="147" height="40" >
             <use href="img/sprite.svg#pink-desktop"></use>
           </svg>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-            <div class="main-nav__button-open">
+        <nav class="header-nav header-nav--closed header-nav--nojs">
+          <button class="header-nav__toggle" type="button">
+            <span class="header-nav__button header-nav__button-open">
               <svg width="74" height="23">
                 <use href="img/sprite.svg#burger"></use>
               </svg>
-            </div>
-            <div class="main-nav__button-close">
+            </span>
+            <span class="header-nav__button header-nav__button-close">
               <svg width="23" height="23">
                 <use href="img/sprite.svg#close_menu_btn"></use>
               </svg>
-            </div>
+            </span>
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__item-link main-nav__item--active">
-                <div class="main-nav__item-underline">Главная</div>
+          <ul class="header-nav__list">
+            <li class="header-nav__item header-nav__item--active">
+              <a class="header-nav__item-link">
+                <div class="header-nav__item-underline">Главная</div>
               </a>
             </li>
-            <li class="main-nav__item ">
-              <a class="main-nav__item-link" href="catalog.html">
-                <div class="main-nav__item-underline">Фотографии</div>
+            <li class="header-nav__item ">
+              <a class="header-nav__item-link" href="catalog.html">
+                <div class="header-nav__item-underline">Фотографии</div>
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="form.html">
-                <div class="main-nav__item-underline">Конкурс</div>
+            <li class="header-nav__item">
+              <a class="header-nav__item-link" href="form.html">
+                <div class="header-nav__item-underline">Конкурс</div>
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="https://htmlacademy.ru/">
-                <div class="main-nav__item-underline">Html Academy</div>
+            <li class="header-nav__item">
+              <a class="header-nav__item-link" href="https://htmlacademy.ru/">
+                <div class="header-nav__item-underline">Html Academy</div>
               </a>
             </li>
           </ul>
@@ -128,23 +127,22 @@
             </div>
           </div>
         </div>
-      </div>
       </section>
       <section class="reviews">
         <div class="container">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="slider reviews__quotes">
             <div class="reviews__list slider__list">
-                <blockquote class="reviews__item reviews__item--active slider__item">
-                  <cite class="reviews__author-name">Николай Петров</cite>
-                  <p class="reviews__text"> &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-                  <p class="reviews__author-info">25 лет, водитель трамвая</p>
-                </blockquote>
-                <blockquote class="reviews__item slider__item">
-                  <cite class="reviews__author-name">Николай Петров</cite>
-                  <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!  &raquo;</p>
-                  <p class="reviews__author-info">25 лет, водитель трамвая</p>
-                </blockquote>
+              <blockquote class="reviews__item reviews__item--active slider__item">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__text"> &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              </blockquote>
+              <blockquote class="reviews__item slider__item">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!  &raquo;</p>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              </blockquote>
             </div>
             <button class="slider-button-left" type="button" aria-label="Предыдущий слайд">
               <svg width="22" height="41">
@@ -158,8 +156,8 @@
             </button>
             <div class="reviews__toggles slider__toggles">
               <button class="slider__toggle slider__toggle--active" type="button" aria-label="1"></button>
-              <button class="slider__toggle" type="button"></button>
-              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle" type="button" aria-label="2"></button>
+              <button class="slider__toggle" type="button" aria-label="3"></button>
             </div>
           </div>
         </div>
@@ -170,7 +168,7 @@
           <div class="tariff__container">
             <table class="tariff__table">
               <tr>
-                <th class="tariff__options--notmobile  tariff__notstyle"></th>
+                <th class="tariff__notmobile  tariff__notstyle"></th>
                 <th class="tariff__description">
                   <p class="tariff__name">База</p>
                   <p class="tariff__price">1,99 USD</p>
@@ -186,7 +184,7 @@
                 </th>
               </tr>
               <tr>
-                <td class="tariff__options--notmobile"><span class="tariff__options">Розовый фильтр</span></td>
+                <td class="tariff__notmobile"><span class="tariff__options">Розовый фильтр</span></td>
                 <td class="tariff__yes tariff__cell">
                   <p class="visually-hidden">Да</p>
                   <span class="tariff__options tariff__options--none">Розовый фильтр</span>
@@ -201,7 +199,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="tariff__options--notmobile"><span class="tariff__options">Смайлики</span></td>
+                <td class="tariff__notmobile"><span class="tariff__options">Смайлики</span></td>
                 <td class="tariff__no tariff__cell">
                   <p class="visually-hidden">Нет</p>
                   <span class="tariff__options tariff__options--none">Смайлики</span>
@@ -216,7 +214,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="tariff__options--notmobile"><span class="tariff__options">Комментарии</span></td>
+                <td class="tariff__notmobile"><span class="tariff__options">Комментарии</span></td>
                 <td class="tariff__no tariff__cell">
                   <p class="visually-hidden">Нет</p>
                   <span class="tariff__options tariff__options--none">Комментарии</span>
@@ -233,12 +231,11 @@
             </table>
           </div>
         </div>
-          <div class="container">
-            <div class="tariff__toggles slider__toggles">
-              <button class="slider__toggle" type="button" aria-label="1"></button>
-              <button class="slider__toggle slider__toggle--active" type="button"></button>
-              <button class="slider__toggle" type="button"></button>
-            </div>
+        <div class="container slider">
+          <div class="tariff__toggles slider__toggles">
+            <button class="slider__toggle" type="button" aria-label="1"></button>
+            <button class="slider__toggle slider__toggle--active" type="button" aria-label="2"></button>
+            <button class="slider__toggle" type="button" aria-label="3"></button>
           </div>
         </div>
       </section>
@@ -272,8 +269,11 @@
       <div class="container">
         <div class="footer__block">
           <a class="footer__logo">
-            <svg width="147" height="40">
+            <svg class="footer__logo-notdesktop" width="147" height="40">
               <use href="img/sprite.svg#logotype"></use>
+            </svg>
+            <svg class="footer__logo-desktop" width="147" height="40" >
+              <use href="img/sprite.svg#logotype-desktop"></use>
             </svg>
           </a>
           <div class="footer-social">

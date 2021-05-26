@@ -6,7 +6,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 75px 0 87px 0;
+    padding: 65px 0 87px 0;
   }
 }
 
@@ -46,6 +46,22 @@
 .footer__logo:active svg {
   fill: @black;
   opacity: 0.3;
+}
+
+.footer__logo-notdesktop {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.footer__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .footer__creator {
